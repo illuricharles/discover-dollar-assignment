@@ -1,0 +1,151 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 4.8rem;
+    background-color: #FDF2E9;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.home-link:link, .home-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #333;
+}
+
+
+
+.nav-items-container {
+    display: flex;
+    gap: 2.8rem;
+}
+
+.nav-items a:link, .nav-items a:visited {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+
+
+.nav-items a:hover,
+.nav-items a:active {
+    color: #cf711f;
+    box-shadow: 0 2px 0 #cf711f;
+}
+
+
+
+/* header nav icons*/
+
+.header-nav-icons {
+
+}
+
+.nav-items-container-icons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-items-container-icons li a:link,
+.nav-items-container-icons li a:visited {
+    text-decoration: none;
+    color: #495057;
+}
+
+
+.nav-item-icon {
+    font-size: 3.2rem;
+    transition: all 0.3s;
+}
+
+.nav-item-icon:hover,
+.nav-item-icon:active {
+    color: #cf711f;   
+    box-shadow: 0 2px 0 #cf711f;
+}
+
+.nav-items-container-icons input[type="search"] {
+    color: #333;
+    font-size: bold;
+    padding: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.header-input input {
+    position: relative;
+}
+
+.search-container {
+    background-color: white;
+    font-size: 1.8rem;
+    z-index: 1000;
+    position: absolute;
+}
+
+/*test*/
+
+.header-input {
+    position: relative;
+    width: 30rem; /* Adjust width as needed */
+  }
+  
+  .header-input input[type="search"] {
+    width: 100%;
+    padding: 0.6rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .search-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    max-height: 200px; /* Optional: limit the height */
+    overflow-y: auto; /* Optional: scroll if too many items */
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .header-input input[type="search"]:focus + .search-container {
+     /* Make it visible */
+    opacity: 1;
+  }
+  
+  .search-container .search-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .search-container .search-item:hover {
+    background-color: #e67e22;
+    color: white;
+  }
+
+/*hero-section*/
+
+
+@media(max-width: 69em) {
+    .nav-items-container {
+        display: none;
+    }
+}

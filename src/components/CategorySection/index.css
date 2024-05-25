@@ -1,0 +1,151 @@
+
+.categories-container {
+    margin: 0 auto;
+}
+
+.category-section {
+    padding: 4.2rem 3.4rem;
+}
+
+
+.category-item {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100px;
+    color: #cf711f;
+}
+
+.category-dropdown {
+    position: relative;
+    display: inline-block;
+    color: #cf711f;
+    font-size: 2.4rem;
+    border: 3px solid #cf711f;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+}
+
+
+
+.subcategory-item {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-bottom: 6px;
+    width: 100%;
+    color: white;
+
+}
+
+.subcategory-list {
+    position: absolute;
+    background-color: #e67e22;
+    padding: 4px 8px;
+    min-width: 100%;
+    left: 0;
+    border-radius: 4px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(11px);
+    pointer-events: none;
+    
+}
+
+.category-dropdown:hover .subcategory-list {
+    opacity: 1;
+    transform: translateY(11px);
+    pointer-events: auto;
+}
+
+
+.nav-category-section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nested-dropbox {
+    position: relative;
+    min-width: 100%;
+}
+
+.nested-subcategory-item {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #e67e22;
+    padding: 4px 8px;
+    min-width: 100%;
+border-radius: 4px;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+pointer-events: none;
+}
+
+.subcategory-item-nested {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.nested-dropbox:hover  .nested-subcategory-item{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-img-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.img-section-container img{
+    width: 100%;
+}
+
+
+
+@media(max-width: 34em) {
+    @media(max-width: 34em) {
+        .heading-primary {
+            font-size: 4rem;
+        }
+
+        .heading-secondary {
+            font-size: 3.6rem;
+        }
+
+
+        .category-dropdown {
+            font-size: 2rem;
+            padding: 0.8rem 1.6rem;
+        }
+
+        
+
+        
+    }
+
+    @media(max-width: 27em) {
+        .header-input input[type="search"] {
+            width: 95%;   
+        }
+    }
+}
